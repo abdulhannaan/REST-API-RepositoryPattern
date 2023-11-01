@@ -1,0 +1,4 @@
+﻿namespace EMS.Utlis.Enums
+{
+
+}

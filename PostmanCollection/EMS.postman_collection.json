@@ -1,0 +1,233 @@
+{
+	"info": {
+		"_postman_id": "608d611d-3a95-453b-80da-45cc9a08f932",
+		"name": "EMS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30822472"
+	},
+	"item": [
+		{
+			"name": "Employees",
+			"item": [
+				{
+					"name": "Add",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiIxIiwidW5pcXVlX25hbWUiOlsiYWRtaW4iLCJpbS5hYmhhbmFuQGdtYWlsLmNvbSJdLCJlbWFpbCI6ImltLmFiaGFuYW5AZ21haWwuY29tIiwiZXhwIjoxNjk4ODIzODE4LCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjYzNzc2LyIsImF1ZCI6Imh0dHA6Ly9sb2NhbGhvc3Q6NjM3NzYvIn0.z6dPSKSIu0ugGFv-D3EQaFX5SpiAkbfhroR8of5wQHg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"value": "*/*"
+							},
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiIxIiwidW5pcXVlX25hbWUiOlsiYWRtaW4iLCJpbS5hYmhhbmFuQGdtYWlsLmNvbSJdLCJlbWFpbCI6ImltLmFiaGFuYW5AZ21haWwuY29tIiwiZXhwIjoxNjk4ODIzNzEzLCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjYzNzc2LyIsImF1ZCI6Imh0dHA6Ly9sb2NhbGhvc3Q6NjM3NzYvIn0.n9N37CFK0igK1-MelcKWALPFJRH5_P9AWtZIFVo-BHk"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"id\": 0,\r\n  \"firstName\": \"abdul\",\r\n  \"lastName\": \"hannan\",\r\n  \"middleName\": \"test\"\r\n}"
+						},
+						"url": {
+							"raw": "https://localhost:44389/api/employees",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44389",
+							"path": [
+								"api",
+								"employees"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "List",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "*/*"
+							},
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiIxIiwidW5pcXVlX25hbWUiOlsiYWRtaW4iLCJpbS5hYmhhbmFuQGdtYWlsLmNvbSJdLCJlbWFpbCI6ImltLmFiaGFuYW5AZ21haWwuY29tIiwiZXhwIjoxNjk4ODIzNzEzLCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjYzNzc2LyIsImF1ZCI6Imh0dHA6Ly9sb2NhbGhvc3Q6NjM3NzYvIn0.n9N37CFK0igK1-MelcKWALPFJRH5_P9AWtZIFVo-BHk"
+							}
+						],
+						"url": {
+							"raw": "https://localhost:44389/api/employees",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44389",
+							"path": [
+								"api",
+								"employees"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiIxIiwidW5pcXVlX25hbWUiOlsiYWRtaW4iLCJpbS5hYmhhbmFuQGdtYWlsLmNvbSJdLCJlbWFpbCI6ImltLmFiaGFuYW5AZ21haWwuY29tIiwiZXhwIjoxNjk4ODIzODE4LCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjYzNzc2LyIsImF1ZCI6Imh0dHA6Ly9sb2NhbGhvc3Q6NjM3NzYvIn0.z6dPSKSIu0ugGFv-D3EQaFX5SpiAkbfhroR8of5wQHg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "accept",
+								"value": "*/*"
+							},
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiIxIiwidW5pcXVlX25hbWUiOlsiYWRtaW4iLCJpbS5hYmhhbmFuQGdtYWlsLmNvbSJdLCJlbWFpbCI6ImltLmFiaGFuYW5AZ21haWwuY29tIiwiZXhwIjoxNjk4ODIzNzEzLCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjYzNzc2LyIsImF1ZCI6Imh0dHA6Ly9sb2NhbGhvc3Q6NjM3NzYvIn0.n9N37CFK0igK1-MelcKWALPFJRH5_P9AWtZIFVo-BHk"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"firstName\": \"string1\",\r\n  \"lastName\": \"string1\",\r\n  \"middleName\": \"string1\"\r\n}"
+						},
+						"url": {
+							"raw": "https://localhost:44389/api/employees/4",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44389",
+							"path": [
+								"api",
+								"employees",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "accept",
+								"value": "*/*"
+							},
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiIxIiwidW5pcXVlX25hbWUiOlsiYWRtaW4iLCJpbS5hYmhhbmFuQGdtYWlsLmNvbSJdLCJlbWFpbCI6ImltLmFiaGFuYW5AZ21haWwuY29tIiwiZXhwIjoxNjk4ODIzNzEzLCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjYzNzc2LyIsImF1ZCI6Imh0dHA6Ly9sb2NhbGhvc3Q6NjM3NzYvIn0.n9N37CFK0igK1-MelcKWALPFJRH5_P9AWtZIFVo-BHk"
+							}
+						],
+						"url": {
+							"raw": "https://localhost:44389/api/employees/2",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44389",
+							"path": [
+								"api",
+								"employees",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "*/*"
+							},
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiIxIiwidW5pcXVlX25hbWUiOlsiYWRtaW4iLCJpbS5hYmhhbmFuQGdtYWlsLmNvbSJdLCJlbWFpbCI6ImltLmFiaGFuYW5AZ21haWwuY29tIiwiZXhwIjoxNjk4ODIzNzEzLCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjYzNzc2LyIsImF1ZCI6Imh0dHA6Ly9sb2NhbGhvc3Q6NjM3NzYvIn0.n9N37CFK0igK1-MelcKWALPFJRH5_P9AWtZIFVo-BHk"
+							}
+						],
+						"url": {
+							"raw": "https://localhost:44389/api/employees/4",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44389",
+							"path": [
+								"api",
+								"employees",
+								"4"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Token",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "accept",
+						"value": "*/*"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"username\": \"admin\",\r\n  \"password\": \"P@ssw0rd\"\r\n}"
+				},
+				"url": {
+					"raw": "https://localhost:44389/api/token/create",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44389",
+					"path": [
+						"api",
+						"token",
+						"create"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
